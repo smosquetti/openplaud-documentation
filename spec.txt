@@ -1,1 +1,0 @@
-Write a complete, interactive documentation for the OpenPlaud platform in a webpage format using HTML, CSS and Javascript, create diagrams and other resources.
