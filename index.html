@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OpenPlaud — Platform Documentation</title>
+<title>OpenPlaud - Platform Documentation</title>
 <meta name="description" content="Complete interactive documentation for the OpenPlaud real-time XMPP chat call-center platform.">
 <style>
 :root{
@@ -1076,7 +1076,8 @@ npm run strophe:test          # needs ejabberd on :5280 with MucSub loaded</code
   /* ---------- Tabs ---------- */
   Array.prototype.forEach.call(document.querySelectorAll(".tabs[data-tabs]"), function (wrap) {
     var btns = wrap.querySelectorAll(".tab");
-    var panes = wrap.querySelectorAll(".tabpane");
+    var scope = wrap.parentElement;
+    var panes = scope.querySelectorAll(".tabpane");
     function pick(name) {
       Array.prototype.forEach.call(btns, function (b) {
         var on = b.getAttribute("data-tab") === name;
